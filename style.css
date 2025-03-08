@@ -10,6 +10,11 @@
   background: linear-gradient(135deg, #153677, #4e085f);
   padding: 10px;
 }
+#input-box {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
 .todo-app {
   width: 100%;
   max-width: 540px;
@@ -46,6 +51,7 @@ input {
   padding: 10px;
   font-weight: 14px;
 }
+
 button {
   border: none;
   outline: none;
