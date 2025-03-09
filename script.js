@@ -78,10 +78,9 @@ listContainer.addEventListener("click", function (e) {
         // 새 텍스트 설정
         li.childNodes[0].nodeValue = newText;
       } else {
-        // 빈 텍스트인 경우 원래 텍스트로 복원
-        li.childNodes[0].nodeValue = originalText;
-        editInput.remove();
-        confirmBtn.remove();
+        // 빈 텍스트인 경우 삭제
+        e.target.parentElement.remove();
+        saveData();
       }
       
       saveData();
@@ -98,9 +97,10 @@ listContainer.addEventListener("click", function (e) {
     editInput.addEventListener("keydown", function(event) {
       if (event.key === "Escape") {
         // 원래 텍스트로 복원
-        li.childNodes[0].nodeValue = originalText;
         editInput.remove();
         confirmBtn.remove();
+        li.childNodes[0].nodeValue = originalText;
+
       }
     });
   }
