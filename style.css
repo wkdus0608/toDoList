@@ -51,7 +51,13 @@ input {
   padding: 10px;
   font-weight: 14px;
 }
-
+#categoryBtn {
+  width: auto;
+  font-size: 10px;
+  padding: 10px;
+  margin-left: 250px;
+  background: #002765;
+}
 button {
   border: none;
   outline: none;

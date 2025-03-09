@@ -9,16 +9,16 @@
   <body>
     <div class="container">
       <div class="todo-app">
-        <h2>To-Do List <img src="images/icon.png"></h2>
+        <h2>
+          To-Do List <img src="images/icon.png" /><button id="categoryBtn">
+            카테고리 추가
+          </button>
+        </h2>
         <div class="row">
           <input type="text" id="input-box" placeholder="Add your job" />
           <button onclick="addTask()">Add</button>
         </div>
-        <ul id="list-container">
-
-        </ul>
-
-
+        <ul id="list-container"></ul>
       </div>
     </div>
 
