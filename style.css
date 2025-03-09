@@ -89,6 +89,7 @@ ul li.checked {
 ul li.checked::before {
   background-image: url(/images/checked.png);
 }
+/* 삭제 버튼 */
 ul li span {
   position: absolute;
   right: 0;
@@ -100,6 +101,49 @@ ul li span {
   text-align: center;
   border-radius: 50%;
 }
+
+ul li .deleteBtn {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* 수정 버튼 */
+ul li .modifyBtn {
+  position: absolute;
+  right: 40px; /* 삭제 버튼 옆에 위치하도록 설정 */
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.edit-input {
+  margin-right: 5px;
+  padding: 2px 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.confirm-btn {
+  padding: 4px 8px;
+  background: #4CAF50;
+  color: white;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+
 ul li span:hover {
   background: #edeef0;
 }
